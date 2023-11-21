@@ -73,7 +73,7 @@ const holdScore = function () {
 
   if (scores[activePlayer] >= 100) {
     document.querySelector(`.player--${activePlayer}`).classList.add("player--winner");
-    document.querySelector(`#name--${activePlayer}`).textContent += ' wins';
+    document.querySelector(`#name--${activePlayer}`).textContent = `player ${activePlayer + 1} wins`;
     document.querySelector(`.player--${activePlayer}`).classList.remove("player--active");
     dice.classList.add("hidden");
     currentScore = 0;
